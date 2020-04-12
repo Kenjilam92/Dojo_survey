@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <h1>Fill the form</h1>
+    <form action="/result" method="post">
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Your Name:</label>
+            <div class="col-sm-10">
+                <input type="text" name="name" id="name">
+            </div>
+        </div>
+        <div class="form-group row">    
+            <label class="col-sm-2 col-form-label" for="location">Dojo Location:</label>
+            <div class="col-sm-10">
+                <select id="location" name="location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="LA">LA</option>
+                    <option value="Online">Online</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Arlington">Arlington</option>
+                    <option value="Tulsa">Tulsa</option>
+                    <option value="Oakland">Oakland</option>
+                    <option value="Boise">Oakland</option>
+                    <option value="OC">Oakland</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="favorite language">Your Favorite Language:</label>
+            <div class="col-sm-10">
+                <select name="coding language" id="coding_language">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="python">python</option>
+                    <option value="javascript">JS</option>
+                </select>
+            </div>    
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label"  for="comment">Commment (optional):</label>
+            <div class="col-sm-10">
+                <input type="textarea" name="comment" id=''>
+            </div>
+        </div>
+        <input type="submit" value="Button" class="btn btn-primary">
+    </form>
+    
+</body>
+</html>
